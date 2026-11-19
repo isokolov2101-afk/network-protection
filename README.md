@@ -38,8 +38,8 @@
 
 Атакуемый (192.168.33.5) и защищаемый (192.168.33.4)
 
-Логи ![suricata](https://github.com/isokolov2101-afk/network-protection/blob/main/suricata-log.txt)
-Логи ![fail2ban](https://github.com/isokolov2101-afk/network-protection/blob/main/fail2ban-log.txt)
+Логи [suricata](https://github.com/isokolov2101-afk/network-protection/blob/main/suricata-log.txt)
+Логи [fail2ban](https://github.com/isokolov2101-afk/network-protection/blob/main/fail2ban-log.txt)
 
 1. В логах Suricata видны попытки сканирования сетевых портов по TCP с атакуемого хоста 192.168.33.5
 2. В логах Fail2Ban видна отображается информация о постороннем фоновом трафике, где внешние боты пытались подключиться по SSH через внешний IP адрес ВМ. Fail2Ban работает на уровне анализа логов приложений и реагирует только на ошибки аутентификации (например, подбор пароля по SSH). Сканирование портов и определение версий служб через nmap не генерирует записей об ошибках входа в журнале. 
@@ -75,13 +75,13 @@
 
 ### Решение 2
 
-Файлы ![users.txt](https://github.com/isokolov2101-afk/network-protection/blob/main/users.txt) и pass.txt ![pass.txt](https://github.com/isokolov2101-afk/network-protection/blob/main/pass.txt)
+Файлы [users.txt](https://github.com/isokolov2101-afk/network-protection/blob/main/users.txt) и pass.txt [pass.txt](https://github.com/isokolov2101-afk/network-protection/blob/main/pass.txt)
 
-Логи ![fail2ban](https://github.com/isokolov2101-afk/network-protection/blob/main/task2-fail2ban-log.txt)
+Логи [fail2ban](https://github.com/isokolov2101-afk/network-protection/blob/main/task2-fail2ban-log.txt)
 В логах видны 5 неудачных попыток аутентификации по SSH с IP-адреса 192.168.33.5, сразу после 5-й ошибки (в 12:39:32,022), достигнув порога maxRetry: 5, модуль действий (fail2ban.actions) выдал уведомление уровня NOTICE:
 [sshd] Ban 192.168.33.5 
 
-Логи![suricata](https://github.com/isokolov2101-afk/network-protection/blob/main/task2-suricata-log.txt)
+Логи [suricata](https://github.com/isokolov2101-afk/network-protection/blob/main/task2-suricata-log.txt)
 В журнале /var/log/suricata/fast.log в 12:39:32.210546 зафиксированы срабатывания сигнатур ET SCAN Potential SSH Scan (SID 2001219) и ET SCAN Potential SSH Scan OUTBOUND (SID 2003068). Поскольку сам процесс проверки паролей внутри SSH зашифрован, Suricata выявила атаку по поведенческому признаку — превышению порога частоты новых TCP-подключений к порту 22 с одного IP-адреса. Будучи системой обнаружения вторжений (IDS), Suricata только записала предупреждение в лог, не блокируя трафик.
 
 
