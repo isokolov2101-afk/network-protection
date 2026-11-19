@@ -1,0 +1,30 @@
+11/19/2026-11:46:36.836797  [**] [1:2013409:5] ET INFO Outbound MSSQL Connection to Non-Standard Port - Likely Malware [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.33.5:45164 -> 192.168.33.4:888
+11/19/2026-11:46:37.801021  [**] [1:2221010:1] SURICATA HTTP unable to match response to request [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 192.168.33.4:8088 -> 192.168.33.5:34986
+11/19/2026-11:46:41.802794  [**] [1:2023753:4] ET SCAN MS Terminal Server Traffic on Non-standard Port [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 192.168.33.5:35058 -> 192.168.33.4:8088
+11/19/2026-11:46:42.804953  [**] [1:2023753:4] ET SCAN MS Terminal Server Traffic on Non-standard Port [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 192.168.33.5:45008 -> 192.168.33.4:888
+11/19/2026-11:46:42.805794  [**] [1:2013409:5] ET INFO Outbound MSSQL Connection to Non-Standard Port - Likely Malware [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.33.5:35206 -> 192.168.33.4:8088
+11/19/2026-11:47:02.173363  [**] [1:2038967:1] ET INFO SSH-2.0-Go version string Observed in Network Traffic [**] [Classification: Misc activity] [Priority: 3] {TCP} 222.210.35.197:44794 -> 192.168.33.4:22
+11/19/2026-11:50:16.360148  [**] [1:2400007:4895] ET DROP Spamhaus DROP Listed Traffic Inbound group 8 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.157:41678 -> 192.168.33.4:22
+11/19/2026-11:50:16.360148  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.157:41678 -> 192.168.33.4:22
+11/19/2026-11:54:26.756222  [**] [1:2038967:1] ET INFO SSH-2.0-Go version string Observed in Network Traffic [**] [Classification: Misc activity] [Priority: 3] {TCP} 222.210.35.197:54850 -> 192.168.33.4:22
+11/19/2026-11:54:30.352505  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.74.56.46:59624 -> 192.168.33.4:22
+11/19/2026-11:56:27.275643  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.74.56.46:59628 -> 192.168.33.4:22
+11/19/2026-11:56:27.983352  [**] [1:2400007:4895] ET DROP Spamhaus DROP Listed Traffic Inbound group 8 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.141:8802 -> 192.168.33.4:22
+11/19/2026-11:56:27.983352  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.141:8802 -> 192.168.33.4:22
+11/19/2026-12:00:24.782288  [**] [1:2500006:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 4 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 138.226.239.234:47928 -> 192.168.33.4:22
+11/19/2026-12:00:28.907670  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 138.226.239.234:47928 -> 192.168.33.4:22
+11/19/2026-12:02:32.508110  [**] [1:2400007:4895] ET DROP Spamhaus DROP Listed Traffic Inbound group 8 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.152:58176 -> 192.168.33.4:22
+11/19/2026-12:02:32.508110  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.152:58176 -> 192.168.33.4:22
+11/19/2026-12:04:39.359146  [**] [1:2260000:1] SURICATA Applayer Mismatch protocol both directions [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 192.168.33.4:22 -> 92.62.113.150:56798
+11/19/2026-12:08:38.026643  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.141:61796 -> 192.168.33.4:22
+11/19/2026-12:09:26.676988  [**] [1:2038967:1] ET INFO SSH-2.0-Go version string Observed in Network Traffic [**] [Classification: Misc activity] [Priority: 3] {TCP} 222.210.35.197:51600 -> 192.168.33.4:22
+11/19/2026-12:14:42.218923  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.157:38756 -> 192.168.33.4:22
+11/19/2026-12:15:15.621066  [**] [1:2038967:1] ET INFO SSH-2.0-Go version string Observed in Network Traffic [**] [Classification: Misc activity] [Priority: 3] {TCP} 182.188.24.243:49190 -> 192.168.33.4:22
+11/19/2026-12:20:54.248189  [**] [1:2400007:4895] ET DROP Spamhaus DROP Listed Traffic Inbound group 8 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.151:35782 -> 192.168.33.4:22
+11/19/2026-12:20:54.248189  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.151:35782 -> 192.168.33.4:22
+11/19/2026-12:23:59.836998  [**] [1:2038967:1] ET INFO SSH-2.0-Go version string Observed in Network Traffic [**] [Classification: Misc activity] [Priority: 3] {TCP} 222.210.35.197:44048 -> 192.168.33.4:22
+11/19/2026-12:28:42.750461  [**] [1:2400007:4895] ET DROP Spamhaus DROP Listed Traffic Inbound group 8 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.121:9090 -> 192.168.33.4:22
+11/19/2026-12:33:04.490365  [**] [1:2500032:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 17 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 45.148.10.152:62874 -> 192.168.33.4:22
+11/19/2026-12:37:08.082486  [**] [1:2500006:7809] ET COMPROMISED Known Compromised or Hostile Host Traffic group 4 [**] [Classification: Misc Attack] [Priority: 2] {TCP} 138.226.239.234:22536 -> 192.168.33.4:22
+11/19/2026-12:39:32.210546  [**] [1:2001219:20] ET SCAN Potential SSH Scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 192.168.33.5:37786 -> 192.168.33.4:22
+11/19/2026-12:39:32.210546  [**] [1:2003068:7] ET SCAN Potential SSH Scan OUTBOUND [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 192.168.33.5:37786 -> 192.168.33.4:22

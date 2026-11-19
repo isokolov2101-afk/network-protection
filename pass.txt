@@ -1,0 +1,7 @@
+123456
+password
+qwerty
+admin123
+welcome
+root123
+secret

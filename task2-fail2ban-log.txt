@@ -1,0 +1,30 @@
+2026-11-19 12:32:27,463 fail2ban.server         [754]: INFO    Shutdown in progress...
+2026-11-19 12:32:27,463 fail2ban.observer       [754]: INFO    Observer stop ... try to end queue 5 seconds
+2026-11-19 12:32:27,483 fail2ban.observer       [754]: INFO    Observer stopped, 0 events remaining.
+2026-11-19 12:32:27,523 fail2ban.server         [754]: INFO    Stopping all jails
+2026-11-19 12:32:27,727 fail2ban.actions        [754]: NOTICE  [sshd] Flush ticket(s) with nftables
+2026-11-19 12:32:27,727 fail2ban.jail           [754]: INFO    Jail 'sshd' stopped
+2026-11-19 12:32:27,728 fail2ban.database       [754]: INFO    Connection to database closed.
+2026-11-19 12:32:27,728 fail2ban.server         [754]: INFO    Exiting Fail2ban
+2026-11-19 12:32:27,825 fail2ban.server         [6422]: INFO    --------------------------------------------------
+2026-11-19 12:32:27,825 fail2ban.server         [6422]: INFO    Starting Fail2ban v1.0.2
+2026-11-19 12:32:27,826 fail2ban.observer       [6422]: INFO    Observer start...
+2026-11-19 12:32:27,831 fail2ban.database       [6422]: INFO    Connected to fail2ban persistent database '/var/lib/fail2ban/fail2ban.sqlite3'
+2026-11-19 12:32:27,832 fail2ban.jail           [6422]: INFO    Creating new jail 'sshd'
+2026-11-19 12:32:27,910 fail2ban.jail           [6422]: INFO    Jail 'sshd' uses systemd {}
+2026-11-19 12:32:27,911 fail2ban.jail           [6422]: INFO    Initiated 'systemd' backend
+2026-11-19 12:32:27,912 fail2ban.filter         [6422]: INFO      maxLines: 1
+2026-11-19 12:32:27,922 fail2ban.filtersystemd  [6422]: INFO    [sshd] Added journal match for: '_SYSTEMD_UNIT=sshd.service + _COMM=sshd'
+2026-11-19 12:32:27,922 fail2ban.filter         [6422]: INFO      maxRetry: 5
+2026-11-19 12:32:27,922 fail2ban.filter         [6422]: INFO      findtime: 600
+2026-11-19 12:32:27,922 fail2ban.actions        [6422]: INFO      banTime: 600
+2026-11-19 12:32:27,923 fail2ban.filter         [6422]: INFO      encoding: UTF-8
+2026-11-19 12:32:27,923 fail2ban.jail           [6422]: INFO    Jail 'sshd' started
+2026-11-19 12:32:27,931 fail2ban.filtersystemd  [6422]: INFO    [sshd] Jail is in operation now (process new journal entries)
+2026-11-19 12:35:37,218 fail2ban.filter         [6422]: INFO    [sshd] Found 192.168.33.5 - 2026-11-19 12:35:36
+2026-11-19 12:37:11,215 fail2ban.filter         [6422]: INFO    [sshd] Found 138.226.239.234 - 2026-11-19 12:37:10
+2026-11-19 12:39:23,465 fail2ban.filter         [6422]: INFO    [sshd] Found 192.168.33.5 - 2026-11-19 12:39:23
+2026-11-19 12:39:30,150 fail2ban.filter         [6422]: INFO    [sshd] Found 192.168.33.5 - 2026-11-19 12:39:29
+2026-11-19 12:39:31,215 fail2ban.filter         [6422]: INFO    [sshd] Found 192.168.33.5 - 2026-11-19 12:39:30
+2026-11-19 12:39:31,965 fail2ban.filter         [6422]: INFO    [sshd] Found 192.168.33.5 - 2026-11-19 12:39:31
+2026-11-19 12:39:32,022 fail2ban.actions        [6422]: NOTICE  [sshd] Ban 192.168.33.5
